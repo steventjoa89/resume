@@ -1,4 +1,3 @@
-import React from "react";
 import { ContactTileData } from "./ContactSection";
 
 function ContactTile({ title, info, icon: Icon }: ContactTileData) {
