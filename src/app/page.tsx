@@ -1,3 +1,9 @@
-export default function Home() {
-  return <div>This is body</div>;
+import ContactSection from "./components/contact/ContactSection";
+
+export default function Page() {
+  return (
+    <main>
+      <ContactSection />
+    </main>
+  );
 }

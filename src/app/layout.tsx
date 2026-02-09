@@ -4,6 +4,7 @@ import LenisScroll from "./components/LenisScroll";
 import "./globals.css";
 import Footer from "./components/footer/Footer";
 import Navbar from "./components/navbar/Navbar";
+import Divider from "./components/Divider";
 
 // const geistSans = Geist({
 //   variable: "--font-geist-sans",
@@ -57,7 +58,7 @@ export default function RootLayout({
         <Navbar />
         {children}
 
-        <hr className="mx-[8%] border-gray-700" />
+        <Divider />
         <Footer />
       </body>
     </html>

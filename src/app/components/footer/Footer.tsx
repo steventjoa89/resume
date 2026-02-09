@@ -1,6 +1,7 @@
 import React from "react";
 import FooterMenu from "./FooterMenu";
 import SocialMedia from "./SocialMedia";
+import { ADDRESS, EMAIL, MOBILE_NO } from "@/config/data";
 
 type FooterMenuItem = {
   title: string;
@@ -18,11 +19,12 @@ function Footer() {
     {
       title: "Useful Links",
       menus: [
+        // TODO: href link
         { title: "Home", href: "#home-section" },
         { title: "About Me", href: "#about-section" },
         { title: "Resume", href: "#resume-section" },
         { title: "Services", href: "#services-section" },
-        { title: "Portfolio", href: "#portfolio-section" },
+        { title: "Contact Me", href: "#contact-section" },
       ],
     },
     {
@@ -40,16 +42,12 @@ function Footer() {
     },
     {
       title: "Contact Me",
-      paragraphs: [
-        "Taman Kebun Jeruk, West Jakarta, Indonesia",
-        "Phone: +62 819 058 7 5858",
-        "Email: steventjoa89@gmail.com",
-      ],
+      paragraphs: [ADDRESS, `Phone: ${MOBILE_NO}`, `Email: ${EMAIL}`],
     },
   ];
 
   return (
-    <footer className="w-full border-t border-white/10">
+    <footer className="w-full">
       <div className="max-w-7xl mx-auto px-4 py-10">
         <div className="flex flex-col md:flex-row justify-between gap-10">
           {/* Left Section */}
