@@ -3,6 +3,7 @@ import ContactTile from "./ContactTile";
 import { IconType } from "react-icons";
 import { ADDRESS, EMAIL, MOBILE_NO } from "@/config/data";
 import ContactForm from "./ContactForm";
+import Container from "../Container";
 
 export type ContactTileData = {
   icon: IconType;
@@ -30,7 +31,7 @@ function ContactSection() {
   ];
 
   return (
-    <div id="contact-section" className="w-full max-w-7xl mx-auto px-4 py-10">
+    <Container id="contact-section">
       <div className="flex flex-col items-center text-center">
         <h3 className="text-4xl lg:text-5xl tracking-wide font-extralight">
           Contact Me
@@ -55,7 +56,7 @@ function ContactSection() {
           </div>
         </div>
       </div>
-    </div>
+    </Container>
   );
 }
 

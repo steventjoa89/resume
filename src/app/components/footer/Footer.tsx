@@ -2,6 +2,7 @@ import React from "react";
 import FooterMenu from "./FooterMenu";
 import SocialMedia from "./SocialMedia";
 import { ADDRESS, EMAIL, MOBILE_NO } from "@/config/data";
+import Container from "../Container";
 
 type FooterMenuItem = {
   title: string;
@@ -47,8 +48,8 @@ function Footer() {
   ];
 
   return (
-    <footer className="w-full">
-      <div className="max-w-7xl mx-auto px-4 py-10">
+    <footer>
+      <Container>
         <div className="flex flex-col md:flex-row justify-between gap-10">
           {/* Left Section */}
           <div className="flex-1">
@@ -72,7 +73,7 @@ function Footer() {
             </div>
           </div>
         </div>
-      </div>
+      </Container>
     </footer>
   );
 }
