@@ -7,9 +7,14 @@ import { IoClose } from "react-icons/io5";
 interface MobileMenuProps {
   isMenuOpen: boolean;
   setIsMenuOpen: React.Dispatch<React.SetStateAction<boolean>>;
+  activeSection: string;
 }
 
-function MobileMenu({ isMenuOpen, setIsMenuOpen }: MobileMenuProps) {
+function MobileMenu({
+  isMenuOpen,
+  setIsMenuOpen,
+  activeSection,
+}: MobileMenuProps) {
   return (
     <div
       className={`fixed top-0 right-0 z-60 w-full bg-neutral-800 shadow-xl shadow-black/5 transition-all duration-300 ease-in-out
@@ -25,16 +30,23 @@ function MobileMenu({ isMenuOpen, setIsMenuOpen }: MobileMenuProps) {
         </button>
       </div>
       <div className="flex flex-col gap-4 p-4 text-base">
-        {NAV_MENUS.map((link: ILink) => (
-          <Link
-            key={link.title}
-            href={link.href}
-            className="py-1 px-3 hover:text-rose-400 transition-colors"
-            onClick={() => setIsMenuOpen(false)}
-          >
-            {link.title}
-          </Link>
-        ))}
+        {NAV_MENUS.map((link: ILink) => {
+          const isActive = activeSection === link.href;
+          return (
+            <Link
+              key={link.title}
+              href={link.href}
+              className={`py-1 px-3 transition-colors ${
+                isActive
+                  ? "text-rose-400 font-bold"
+                  : "text-white hover:text-rose-400"
+              }`}
+              onClick={() => setIsMenuOpen(false)}
+            >
+              {link.title}
+            </Link>
+          );
+        })}
       </div>
     </div>
   );

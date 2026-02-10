@@ -1,10 +1,10 @@
 import { FaEnvelope, FaStar } from "react-icons/fa";
 import Divider from "../Divider";
-import Button from "../Button";
-import { GoDownload } from "react-icons/go";
 import SocialMedia from "../footer/SocialMedia";
 import Link from "next/link";
 import Image from "next/image";
+import Button from "../Button";
+import { GoDownload } from "react-icons/go";
 
 function AboutMeStatsInfo({ label, value }: { label: string; value: string }) {
   return (
@@ -51,10 +51,11 @@ function AboutMeCard() {
 
       <Divider />
 
-      <div className="mt-3 mb-6 w-full space-y-3">
-        {/* TODO: */}
+      <div className="mt-3 mb-6 w-full flex flex-col space-y-4">
         {/* Download CV */}
-        <Button label="Dowload CV" className="w-full" icon={GoDownload} />
+        <a href="/pdf/resume.pdf" download="resume.pdf">
+          <Button label="Download CV" className="w-full" icon={GoDownload} />
+        </a>
 
         {/* Contact Me */}
         <Link href="#contact-section">
