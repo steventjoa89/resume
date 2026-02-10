@@ -12,7 +12,7 @@ function AboutSection() {
         </h3>
         <div className="mx-auto mt-2 w-12 h-0.5 bg-white"></div>
 
-        <p className="mt-6 text-sm md:text-base text-gray-400 max-w-3xl">
+        <p className="mt-6 text-sm md:text-base text-neutral-400 max-w-3xl">
           Web-focused software engineer building fast, scalable, and
           SEO-friendly web applications with modern technologies and a strong
           emphasis on performance and user experience.

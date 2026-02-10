@@ -8,7 +8,7 @@ function CtaSection() {
       <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
         <div>
           <h4 className="text-2xl font-semibold">Like what you see?</h4>
-          <p className="text-gray-400">
+          <p className="text-neutral-400">
             Let’s talk about how I can help you build fast, scalable, and
             SEO-friendly web applications.
           </p>

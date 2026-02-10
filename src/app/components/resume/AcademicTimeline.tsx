@@ -26,7 +26,7 @@ function AcademicTimeline({ data }: Props) {
                   <div className="text-rose-400 text-sm px-3 py-1 bg-rose-500/20 rounded-full">
                     {item.years[0]} - {item.years[1]}
                   </div>
-                  <div className="uppercase text-gray-400 text-xs tracking-wider">
+                  <div className="uppercase text-neutral-400 text-xs tracking-wider">
                     {item.degree}
                   </div>
                 </div>
@@ -35,11 +35,11 @@ function AcademicTimeline({ data }: Props) {
                   {item.degree} of {item.field}
                 </h4>
 
-                <h5 className="-mt-2.5 text-sm text-gray-400">
+                <h5 className="-mt-2.5 text-sm text-neutral-400">
                   {item.university} · {item.country}
                 </h5>
 
-                <p className="text-gray-400">{item.description}</p>
+                <p className="text-neutral-400">{item.description}</p>
               </div>
             </div>
           );

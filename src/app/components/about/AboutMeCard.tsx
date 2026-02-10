@@ -10,7 +10,7 @@ function AboutMeStatsInfo({ label, value }: { label: string; value: string }) {
   return (
     <div className="flex flex-col space-y-1.5">
       <span className="text-3xl text-rose-400">{value}</span>
-      <span className="uppercase text-xs text-gray-400">{label}</span>
+      <span className="uppercase text-xs text-neutral-400">{label}</span>
     </div>
   );
 }
@@ -20,7 +20,7 @@ function AboutMeCard() {
     <div className="flex flex-col items-center text-center p-8 bg-white/5 backdrop-blur rounded-2xl border border-white/10 space-y-4">
       <div className="w-36 h-36 rounded-full border-5 border-rose-500 overflow-hidden flex items-center justify-center">
         <Image
-          src="/images/profile.png"
+          src="/images/profile.webp"
           alt="Steven Tjoa"
           width={144}
           height={144}

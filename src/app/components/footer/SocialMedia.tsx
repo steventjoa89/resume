@@ -12,7 +12,7 @@ function SocialMedia({ iconColor }: { iconColor?: string }) {
       " text-white border-white hover:text-rose-400 hover:border-rose-400";
   } else {
     divClassName +=
-      " text-gray-500 border-gray-500 hover:text-rose-400 hover:border-rose-400";
+      " text-neutral-500 border-neutral-500 hover:text-rose-400 hover:border-rose-400";
   }
 
   return (

@@ -31,9 +31,7 @@ function AboutMeInfo() {
           Turning Ideas into Digital Experiences
         </h4>
 
-        <div className="mx-auto mt-2 w-12 h-0.5 bg-white"></div>
-
-        <p className="mt-6 text-sm md:text-base text-gray-400 max-w-3xl">
+        <p className="mt-6 text-sm md:text-base text-neutral-400 max-w-3xl">
           I am a passionate web designer and developer who loves transforming
           concepts into beautiful, user-friendly digital experiences. With years
           of experience creating responsive websites and interactive interfaces,

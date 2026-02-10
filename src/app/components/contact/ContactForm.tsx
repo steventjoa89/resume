@@ -50,14 +50,14 @@ function ContactForm() {
       <input
         name="name"
         placeholder="Your name"
-        className="w-full bg-transparent border border-white/20 rounded-md px-4 py-3 text-sm text-white placeholder:text-gray-500 focus:outline-none focus:border-rose-400 transition"
+        className="w-full bg-transparent border border-white/20 rounded-md px-4 py-3 text-sm text-white placeholder:text-neutral-500 focus:outline-none focus:border-rose-400 transition"
       />
       {errors.name && <p className="text-red-400 text-xs">{errors.name}</p>}
       {/* Email */}
       <input
         name="email"
         placeholder="Your email"
-        className="w-full bg-transparent border border-white/20 rounded-md px-4 py-3 text-sm text-white placeholder:text-gray-500 focus:outline-none focus:border-rose-400 transition"
+        className="w-full bg-transparent border border-white/20 rounded-md px-4 py-3 text-sm text-white placeholder:text-neutral-500 focus:outline-none focus:border-rose-400 transition"
       />
       {errors.email && <p className="text-red-400 text-xs">{errors.email}</p>}
 
@@ -66,7 +66,7 @@ function ContactForm() {
         name="message"
         placeholder="Message"
         rows={5}
-        className="w-full bg-transparent border border-white/20 rounded-md px-4 py-3 text-sm text-white placeholder:text-gray-500 focus:outline-none focus:border-rose-400 transition resize-none"
+        className="w-full bg-transparent border border-white/20 rounded-md px-4 py-3 text-sm text-white placeholder:text-neutral-500 focus:outline-none focus:border-rose-400 transition resize-none"
       />
       {errors.message && (
         <p className="text-red-400 text-xs">{errors.message}</p>

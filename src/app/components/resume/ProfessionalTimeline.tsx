@@ -19,16 +19,16 @@ function ProfessionalTimeline({ data }: Props) {
 
             <div>
               <h4 className="font-semibold text-lg">{item.position}</h4>
-              <p className="text-sm text-gray-400">
+              <p className="text-sm text-neutral-400">
                 {item.company} · {item.years[0]} – {item.years[1]}
               </p>
 
-              <p className="mt-1 text-sm text-gray-400 max-w-md">
+              <p className="mt-1 text-sm text-neutral-400 max-w-md">
                 {item.description}
               </p>
 
               {item.highlights && (
-                <ul className="mt-2 list-disc list-inside text-sm text-gray-400 space-y-1">
+                <ul className="mt-2 list-disc list-inside text-sm text-neutral-400 space-y-1">
                   {item.highlights.map((h, idx) => (
                     <li key={idx}>{h}</li>
                   ))}

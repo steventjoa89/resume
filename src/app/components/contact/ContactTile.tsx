@@ -11,7 +11,7 @@ function ContactTile({ title, info, icon: Icon }: IContactTileData) {
       {/* Text Content */}
       <div>
         <h4 className="text-lg font-semibold tracking-wide">{title}</h4>
-        <p className="mt-0.5 text-[0.9rem] text-gray-200">{info}</p>
+        <p className="mt-0.5 text-[0.9rem] text-neutral-200">{info}</p>
       </div>
     </div>
   );

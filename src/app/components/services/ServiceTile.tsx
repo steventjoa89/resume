@@ -12,7 +12,7 @@ function ServiceTile({ title, description, icon: Icon }: IServicesTileData) {
       <div className="flex flex-col items-center">
         <h4 className="text-lg font-semibold tracking-wide">{title}</h4>
 
-        <p className="mt-1 text-[0.9rem] text-gray-300">{description}</p>
+        <p className="mt-1 text-[0.87rem] text-neutral-300">{description}</p>
       </div>
     </div>
   );

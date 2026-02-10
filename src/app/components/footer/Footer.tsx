@@ -35,7 +35,7 @@ function Footer() {
             <h3 className="text-2xl md:text-3xl font-semibold tracking-wide">
               Steven Tjoa Tanudjaja
             </h3>
-            <p className="mt-3 text-sm text-gray-400 max-w-md">
+            <p className="my-3 text-sm text-neutral-400 max-w-md">
               Software Engineer and Web Developer passionate about building
               scalable, high-performance web applications and modern digital
               experiences.
@@ -45,7 +45,7 @@ function Footer() {
 
           {/* Right Section */}
           <div className="flex-1">
-            <div className="grid grid-cols-2 md:grid-cols-3 gap-6 gap-y-8 text-sm text-gray-300">
+            <div className="grid grid-cols-2 md:grid-cols-3 gap-6 gap-y-8 text-sm text-neutral-300">
               {footerMenus.map((footerMenu) => (
                 <FooterMenu key={footerMenu.title} footerMenu={footerMenu} />
               ))}

@@ -67,7 +67,7 @@ function ServicesSection() {
         </h3>
         <div className="mx-auto mt-2 w-12 h-0.5 bg-white"></div>
 
-        <p className="mt-6 text-sm md:text-base text-gray-400 max-w-xl">
+        <p className="mt-6 text-sm md:text-base text-neutral-400 max-w-xl">
           I help businesses and startups design, build, and scale modern web
           applications with a focus on performance, SEO, and great user
           experience.
