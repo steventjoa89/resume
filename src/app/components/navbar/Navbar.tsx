@@ -54,7 +54,7 @@ function Navbar() {
         <div className="max-w-7xl mx-auto flex items-center justify-between">
           <Link
             href="#home-section"
-            className="text-2xl md:text-3xl tracking-wide"
+            className="text-2xl md:text-3xl tracking-wide uppercase"
           >
             Steven
           </Link>

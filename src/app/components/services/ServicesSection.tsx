@@ -3,6 +3,7 @@ import Container from "../Container";
 
 import ServiceTile from "./ServiceTile";
 import { SERVICES } from "@/config/data";
+import ServiceBanner from "./ServiceBanner";
 
 function ServicesSection() {
   return (
@@ -34,6 +35,8 @@ function ServicesSection() {
           <ServiceTile key={service.title} {...service} />
         ))}
       </div>
+
+      <ServiceBanner />
     </Container>
   );
 }

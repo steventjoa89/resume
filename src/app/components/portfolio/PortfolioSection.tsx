@@ -1,6 +1,4 @@
-import React from "react";
 import Container from "../Container";
-import Image from "next/image";
 import { PROJECTS } from "@/config/data";
 import PortfolioCard from "./PortfolioCard";
 
@@ -14,7 +12,10 @@ function PortfolioSection() {
         >
           Portfolio
         </h3>
-        <div className="mx-auto mt-2 w-12 h-0.5 bg-white"></div>
+        <div
+          data-aos="fade-up"
+          className="mx-auto mt-2 w-12 h-0.5 bg-white"
+        ></div>
 
         <p
           data-aos="fade-up"
