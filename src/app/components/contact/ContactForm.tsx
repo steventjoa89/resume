@@ -1,8 +1,9 @@
 "use client";
 
 import React, { useState } from "react";
-import Form from "next/form";
 import Button from "../Button";
+import { submitContactForm } from "./actions";
+import toast from "react-hot-toast";
 
 type Errors = {
   name?: string;
@@ -33,19 +34,30 @@ function ContactForm() {
     return newErrors;
   };
 
-  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+
+    const form = e.currentTarget;
     const formData = new FormData(e.currentTarget);
     const validationErrors = validate(formData);
-
     if (Object.keys(validationErrors).length > 0) {
-      e.preventDefault(); // stop Next.js Form navigation
       setErrors(validationErrors);
+      return;
+    }
+
+    try {
+      await submitContactForm(formData); // server-side action
+      setErrors({});
+      form.reset();
+      toast.success("Message sent successfully!");
+    } catch (err) {
+      console.error(err);
+      toast.error("Something went wrong.");
     }
   };
 
   return (
-    // TODO: ONSUBMIT => Send Email to Me
-    <Form action="/submit" onSubmit={handleSubmit} className="space-y-4">
+    <form onSubmit={handleSubmit} className="space-y-4">
       {/* Name */}
       <input
         name="name"
@@ -75,7 +87,7 @@ function ContactForm() {
       <div className="pt-5 w-full flex items-center justify-center">
         <Button label="Send Message" submit={true} />
       </div>
-    </Form>
+    </form>
   );
 }
 

@@ -5,6 +5,7 @@ import "./globals.css";
 import Footer from "./components/footer/Footer";
 import Navbar from "./components/navbar/Navbar";
 import Divider from "./components/Divider";
+import { Toaster } from "react-hot-toast";
 
 // const geistSans = Geist({
 //   variable: "--font-geist-sans",
@@ -60,6 +61,15 @@ export default function RootLayout({
 
         <Divider />
         <Footer />
+
+        <Toaster
+          position="top-right"
+          toastOptions={{
+            style: {
+              fontSize: "14px",
+            },
+          }}
+        />
       </body>
     </html>
   );
