@@ -18,7 +18,7 @@ function MobileMenu({
   return (
     <div
       className={`fixed top-0 right-0 z-60 w-full bg-neutral-800 shadow-xl shadow-black/5 transition-all duration-300 ease-in-out
-          ${isMenuOpen ? "h-80 overflow-hidden" : "h-0 overflow-hidden"}
+          ${isMenuOpen ? "h-96 overflow-hidden" : "h-0 overflow-hidden"}
         `}
     >
       <div className="flex items-center justify-end p-4">

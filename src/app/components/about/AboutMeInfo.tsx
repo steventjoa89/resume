@@ -25,7 +25,7 @@ function AboutMeInfo() {
   ];
 
   return (
-    <div>
+    <div data-aos="fade-left">
       <div className="flex flex-col items-center text-center">
         <h4 className="text-2xl lg:text-3xl tracking-wide">
           Turning Ideas into Digital Experiences

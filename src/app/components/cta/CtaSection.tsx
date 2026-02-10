@@ -5,7 +5,10 @@ import Container from "../Container";
 function CtaSection() {
   return (
     <Container id="cta-section">
-      <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
+      <div
+        data-aos="fade-up"
+        className="flex flex-col md:flex-row md:items-center md:justify-between gap-4"
+      >
         <div>
           <h4 className="text-2xl font-semibold">Like what you see?</h4>
           <p className="text-neutral-400">

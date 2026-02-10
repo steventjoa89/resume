@@ -11,12 +11,6 @@ export interface IFooterMenuSection {
   paragraphs?: string[];
 }
 
-export interface IServicesTileData {
-  icon: IconType;
-  title: string;
-  description: string;
-}
-
 export interface IContactTileData {
   icon: IconType;
   title: string;
@@ -37,5 +31,18 @@ export interface IAcademicBackground {
   university: string;
   country: string;
   years: [number, number];
+  description: string;
+}
+
+export interface IProject {
+  title: string;
+  subtitle: string;
+  year: number;
+  image: string;
+}
+
+export interface IService {
+  icon: IconType;
+  title: string;
   description: string;
 }

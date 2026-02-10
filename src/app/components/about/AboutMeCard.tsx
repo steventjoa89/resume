@@ -17,7 +17,10 @@ function AboutMeStatsInfo({ label, value }: { label: string; value: string }) {
 
 function AboutMeCard() {
   return (
-    <div className="flex flex-col items-center text-center p-8 bg-white/5 backdrop-blur rounded-2xl border border-white/10 space-y-4">
+    <div
+      data-aos="fade-right"
+      className="flex flex-col items-center text-center p-8 bg-white/5 backdrop-blur rounded-2xl border border-white/10 space-y-4"
+    >
       <div className="w-36 h-36 rounded-full border-5 border-rose-500 overflow-hidden flex items-center justify-center">
         <Image
           src="/images/profile.webp"

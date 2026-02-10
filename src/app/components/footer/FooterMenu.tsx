@@ -14,7 +14,7 @@ function FooterMenu({ footerMenu }: FooterMenuProps) {
         {footerMenu.title}
       </h4>
       {footerMenu.menus && (
-        <ul className="mt-4 space-y-4 text-sm">
+        <ul className="mt-4 space-y-2 text-sm">
           {footerMenu.menus.map((m) => (
             <li key={m.title}>
               <Link href={m.href} className="hover:text-rose-400">
@@ -25,7 +25,7 @@ function FooterMenu({ footerMenu }: FooterMenuProps) {
         </ul>
       )}
       {footerMenu.paragraphs && (
-        <div className="mt-4 space-y-4 text-sm">
+        <div className="mt-4 space-y-2 text-sm">
           {footerMenu.paragraphs.map((p, i) => (
             <div key={i}>{p}</div>
           ))}

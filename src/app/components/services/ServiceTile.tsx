@@ -1,8 +1,11 @@
-import { IServicesTileData } from "../../../../types";
+import { IService } from "../../../../types";
 
-function ServiceTile({ title, description, icon: Icon }: IServicesTileData) {
+function ServiceTile({ title, description, icon: Icon }: IService) {
   return (
-    <div className="flex flex-col items-center text-center gap-3 p-6 bg-white/5 rounded-xl border border-white/10 hover:bg-white/10 transition">
+    <div
+      data-aos="flip-left"
+      className="flex flex-col items-center text-center gap-3 p-6 bg-white/5 rounded-xl border border-white/10 hover:bg-white/10 transition"
+    >
       {/* Icon */}
       <div className="flex items-center justify-center text-rose-400">
         <Icon className="w-10 h-10" />

@@ -7,12 +7,21 @@ function AboutSection() {
   return (
     <Container id="about-section">
       <div className="flex flex-col items-center text-center">
-        <h3 className="text-4xl lg:text-5xl tracking-wide font-extralight">
+        <h3
+          data-aos="fade-up"
+          className="text-4xl lg:text-5xl tracking-wide font-extralight"
+        >
           About Me
         </h3>
-        <div className="mx-auto mt-2 w-12 h-0.5 bg-white"></div>
+        <div
+          data-aos="fade-up"
+          className="mx-auto mt-2 w-12 h-0.5 bg-white"
+        ></div>
 
-        <p className="mt-6 text-sm md:text-base text-neutral-400 max-w-3xl">
+        <p
+          data-aos="fade-up"
+          className="mt-6 text-sm md:text-base text-neutral-400 max-w-3xl"
+        >
           Web-focused software engineer building fast, scalable, and
           SEO-friendly web applications with modern technologies and a strong
           emphasis on performance and user experience.

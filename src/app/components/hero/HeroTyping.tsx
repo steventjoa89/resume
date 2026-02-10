@@ -4,9 +4,12 @@ import { Typewriter } from "react-simple-typewriter";
 
 function HeroTyping() {
   return (
-    <p className="text-center max-w-lg text-xl md:text-2xl">
+    <p data-aos="fade-up" className="text-center max-w-lg text-xl md:text-2xl">
       I am a{" "}
-      <span className="font-semibold text-rose-400 underline underline-offset-4 tracking-wide">
+      <span
+        data-aos="fade-up"
+        className="font-semibold text-rose-400 underline underline-offset-4 tracking-wide"
+      >
         <Typewriter
           words={[
             "Website Freelancer",

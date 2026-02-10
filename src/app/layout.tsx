@@ -1,26 +1,11 @@
 import type { Metadata } from "next";
 import { Roboto } from "next/font/google";
-import LenisScroll from "./components/LenisScroll";
-import "./globals.css";
 import Footer from "./components/footer/Footer";
 import Navbar from "./components/navbar/Navbar";
 import Divider from "./components/Divider";
 import { Toaster } from "react-hot-toast";
-
-// const geistSans = Geist({
-//   variable: "--font-geist-sans",
-//   subsets: ["latin"],
-// });
-
-// const geistMono = Geist_Mono({
-//   variable: "--font-geist-mono",
-//   subsets: ["latin"],
-// });
-
-// const inter = Inter({
-//   variable: "--font-sans",
-//   subsets: ["latin"],
-// });
+import "./globals.css";
+import AOSProvider from "./components/AOSProvider";
 
 const roboto = Roboto({
   variable: "--font-roboto",
@@ -55,7 +40,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${roboto.variable} antialiased`}>
-        {/* <LenisScroll /> */}
+        <AOSProvider />
         <Navbar />
         {children}
 
