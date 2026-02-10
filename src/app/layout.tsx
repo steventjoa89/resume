@@ -54,8 +54,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${roboto.variable} antialiased`}>
-        <LenisScroll />
-        <Navbar />
+        {/* <LenisScroll /> */}
+        {/* TODO: */}
+        {/* <Navbar /> */}
         {children}
 
         <Divider />

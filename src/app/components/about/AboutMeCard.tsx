@@ -44,7 +44,7 @@ function AboutMeCard() {
       <Divider />
 
       {/* Stats */}
-      <div className="mt-3 mb-6 flex w-full justify-between text-sm text-white/80">
+      <div className="mt-3 mb-6 px-10 flex w-full justify-between text-sm text-white/80">
         <AboutMeStatsInfo label="Projects" value="146" />
         <AboutMeStatsInfo label="Years" value="8+" />
       </div>
