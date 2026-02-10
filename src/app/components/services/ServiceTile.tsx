@@ -1,7 +1,6 @@
-import React from "react";
-import { ServicesTileData } from "./ServicesSection";
+import { IServicesTileData } from "../../../../types";
 
-function ServiceTile({ title, description, icon: Icon }: ServicesTileData) {
+function ServiceTile({ title, description, icon: Icon }: IServicesTileData) {
   return (
     <div className="flex flex-col items-center text-center gap-3 p-6 bg-white/5 rounded-xl border border-white/10 hover:bg-white/10 transition">
       {/* Icon */}

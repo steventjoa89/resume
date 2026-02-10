@@ -1,9 +1,8 @@
-import React from "react";
-import { ProfessionalBackground } from "./ResumeSection";
 import { FaBriefcase } from "react-icons/fa";
+import { IProfessionalBackground } from "../../../../types";
 
 type Props = {
-  data: ProfessionalBackground[];
+  data: IProfessionalBackground[];
 };
 
 function ProfessionalTimeline({ data }: Props) {

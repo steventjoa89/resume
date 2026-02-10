@@ -1,23 +1,10 @@
+import {
+  IAcademicBackground,
+  IProfessionalBackground,
+} from "../../../../types";
 import Container from "../Container";
 import AcademicTimeline from "./AcademicTimeline";
 import ProfessionalTimeline from "./ProfessionalTimeline";
-
-export type ProfessionalBackground = {
-  position: string;
-  company: string;
-  years: [string, string];
-  description: string;
-  highlights?: string[];
-};
-
-export type AcademicBackground = {
-  degree: string;
-  field: string;
-  university: string;
-  country: string;
-  years: [number, number];
-  description: string;
-};
 
 function ResumeTitle({ value }: { value: string }) {
   return (
@@ -28,7 +15,7 @@ function ResumeTitle({ value }: { value: string }) {
 }
 
 function ResumeSection() {
-  const professionalBackgrounds: ProfessionalBackground[] = [
+  const professionalBackgrounds: IProfessionalBackground[] = [
     {
       position: "Software Engineer",
       company: "PT. Allianz Life Indonesia",
@@ -109,7 +96,7 @@ function ResumeSection() {
     },
   ];
 
-  const academicBackgrounds: AcademicBackground[] = [
+  const academicBackgrounds: IAcademicBackground[] = [
     {
       degree: "Master",
       field: "International Business",

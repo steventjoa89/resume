@@ -7,11 +7,11 @@ import {
   FaPhone,
 } from "react-icons/fa";
 import ContactTile from "../contact/ContactTile";
-import { ContactTileData } from "../contact/ContactSection";
 import { EMAIL, MOBILE_NO } from "@/config/data";
+import { IContactTileData } from "../../../../types";
 
 function AboutMeInfo() {
-  const aboutMeInfos: ContactTileData[] = [
+  const aboutMeInfos: IContactTileData[] = [
     { title: "Experience", info: "8+ Years", icon: FaBriefcase },
     { title: "Degree", info: "Computer Science", icon: FaGraduationCap },
     { title: "Based In", info: "Jakarta, Indonesia", icon: FaMapMarkerAlt },

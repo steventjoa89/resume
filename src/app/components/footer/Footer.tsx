@@ -1,49 +1,28 @@
-import React from "react";
 import FooterMenu from "./FooterMenu";
 import SocialMedia from "./SocialMedia";
-import { ADDRESS, EMAIL, MOBILE_NO } from "@/config/data";
+import {
+  ADDRESS,
+  EMAIL,
+  FOOTER_SERVICE_MENUS,
+  MOBILE_NO,
+  NAV_MENUS,
+} from "@/config/data";
 import Container from "../Container";
-
-type FooterMenuItem = {
-  title: string;
-  href: string;
-};
-
-export type FooterMenuSection = {
-  title: string;
-  menus?: FooterMenuItem[];
-  paragraphs?: string[];
-};
+import { IFooterMenuSection } from "../../../../types";
 
 function Footer() {
-  const footerMenus: FooterMenuSection[] = [
+  const footerMenus: IFooterMenuSection[] = [
     {
       title: "Useful Links",
-      menus: [
-        // TODO: href link
-        { title: "Home", href: "#home-section" },
-        { title: "About Me", href: "#about-section" },
-        { title: "Resume", href: "#resume-section" },
-        { title: "Services", href: "#services-section" },
-        { title: "Contact Me", href: "#contact-section" },
-      ],
+      menus: NAV_MENUS,
     },
     {
       title: "My Services",
-      menus: [
-        { title: "Web Development", href: "#services-section" },
-        {
-          title: "Frontend (React & Next.js)",
-          href: "#services-section",
-        },
-        { title: "API Development", href: "#services-section" },
-        { title: "Performance & SEO", href: "#services-section" },
-        { title: "System Architecture", href: "#services-section" },
-      ],
+      menus: FOOTER_SERVICE_MENUS,
     },
     {
       title: "Contact Me",
-      paragraphs: [ADDRESS, `Phone: ${MOBILE_NO}`, `Email: ${EMAIL}`],
+      paragraphs: [ADDRESS, MOBILE_NO, EMAIL],
     },
   ];
 

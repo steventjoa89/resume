@@ -1,9 +1,8 @@
 import Link from "next/link";
-import React from "react";
-import { FooterMenuSection } from "./Footer";
+import { IFooterMenuSection } from "../../../../types";
 
 interface FooterMenuProps {
-  footerMenu: FooterMenuSection;
+  footerMenu: IFooterMenuSection;
 }
 
 function FooterMenu({ footerMenu }: FooterMenuProps) {

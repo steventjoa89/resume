@@ -1,9 +1,8 @@
-import React from "react";
-import { AcademicBackground } from "./ResumeSection";
 import { FaGraduationCap } from "react-icons/fa";
+import { IAcademicBackground } from "../../../../types";
 
 type Props = {
-  data: AcademicBackground[];
+  data: IAcademicBackground[];
 };
 
 function AcademicTimeline({ data }: Props) {

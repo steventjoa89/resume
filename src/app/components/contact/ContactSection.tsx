@@ -1,18 +1,12 @@
 import { FaEnvelope, FaMapMarkerAlt, FaPhoneAlt } from "react-icons/fa";
 import ContactTile from "./ContactTile";
-import { IconType } from "react-icons";
 import { ADDRESS, EMAIL, MOBILE_NO } from "@/config/data";
 import ContactForm from "./ContactForm";
 import Container from "../Container";
-
-export type ContactTileData = {
-  icon: IconType;
-  title: string;
-  info: string;
-};
+import { IContactTileData } from "../../../../types";
 
 function ContactSection() {
-  const contactTiles: ContactTileData[] = [
+  const contactTiles: IContactTileData[] = [
     {
       title: "Address",
       info: ADDRESS,

@@ -10,14 +10,7 @@ import {
   BiSolidZap,
 } from "react-icons/bi";
 import ServiceTile from "./ServiceTile";
-import { IconType } from "react-icons";
 import { FiMessageCircle } from "react-icons/fi";
-
-export type ServicesTileData = {
-  icon: IconType;
-  title: string;
-  description: string;
-};
 
 function ServicesSection() {
   const services = [

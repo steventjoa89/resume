@@ -1,6 +1,6 @@
-import { ContactTileData } from "./ContactSection";
+import { IContactTileData } from "../../../../types";
 
-function ContactTile({ title, info, icon: Icon }: ContactTileData) {
+function ContactTile({ title, info, icon: Icon }: IContactTileData) {
   return (
     <div className="flex items-start gap-4 p-6 bg-white/5 rounded-xl border border-white/10 hover:bg-white/10 transition">
       {/* Icon */}
